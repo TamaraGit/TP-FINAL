@@ -1,0 +1,35 @@
+
+[   
+     {
+    "destino": "Isla de los estados",       
+    "url":"https://http2.mlstatic.com/D_NQ_NP_896435-MLA44170194679_112020-O.webp",
+    "provincia": "Tierra del Fuego",
+    "precio": 7200
+    },
+    {
+    "destino": "Cerro castor",
+    "url":"https://dynamic-media-cdn.tripadvisor.com/media/photo-o/07/08/9f/b1/cerro-castor-castor-mount.jpg?w=1200&h=1200&s=1",
+    "provincia": "Tierra del Fuego",
+    "precio": 4500
+    }, 
+   {
+    "destino": "Fitz Roy",
+    "url":"https://i0.wp.com/tolongedecasa.com/wp-content/uploads/2015/07/Trekking-ao-Fitz-Roy-16.jpg?ssl=1",
+    "provincia": "Santa Cruz",
+    "precio": 6500
+    },
+    {
+    "destino": "El Chalten",
+    "url":"https://images.unsplash.com/photo-1584782494342-19b561a6340d?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=840&q=80",
+    "provincia": "Santa Cruz",
+    "precio": 7500
+    },    
+    {
+    "destino": "Glaciar Perito Moreno",
+    "url":"https://images.unsplash.com/photo-1577373482643-5c7ccf8f0ac9?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=870&q=80", 
+    "provincia": "Santa Cruz",
+    "precio": 8000
+    }
+            
+        
+]

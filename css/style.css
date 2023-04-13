@@ -1,0 +1,228 @@
+
+body{
+    background-color: #F7F7F7;
+}
+
+:room{
+    --color-principal:rgb(63, 63, 211);
+    --color-secundario:rgb(105, 105, 190); 
+}
+/* ----------------------------HEADER----------------------- */
+header{
+    display: flex;
+    justify-content: space-between;
+}
+img{
+    width: 5%;
+    margin: 2vw 3vw;
+}
+nav{
+    display: flex;
+    gap: 5vh;
+    margin: 2vw 3vw;
+}
+a{
+    color: rgb(63, 63, 211);
+    text-decoration: none;
+}
+.btn-iniciar-sesion{
+    background-color: transparent;
+    border: gray 1px solid;
+    border-radius: 14px;
+    height: 30px;
+}
+.btn-iniciar-sesion:hover {
+    background-color: rgb(127, 140, 255);
+}
+.btn-registrarse{
+    background-color: transparent;
+    border: gray 1px solid;
+    border-radius: 14px;
+    height: 30px;
+}
+.btn-registrarse:hover{
+    background-color: rgb(127, 140, 255);
+}
+/* ----------------------------FIN HEADER--------------------- */
+
+/* ----------------------------IMAGEN PRINCIPAL HERO--------------------- */
+
+.imagen-principal{
+    width: 500px;
+    height: 350px;
+    background-image: url(/Imagenes/IMAGENFONDO.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.imagen-principal h1{
+    display: flex;
+    padding: 110px;
+    color:rgb(33, 115, 216);
+}
+
+/* ----------------------------FIN IMAGEN PRINCIPAL--------------------- */
+
+/* ----------------------------FORMULARIO--------------------- */
+.seccion1{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.img-principal img{
+    display: flex;
+    width: 75%;
+    height: 50%;
+    border-radius: 14px;
+}
+.img-principal p{
+    font-size: larger;
+    justify-content: center;
+    color: rgb(51, 48, 48);
+    position:absolute;
+    top: 29%;
+    left: 15%;
+}
+.caja{
+    display: flex;
+    background-color: rgb(68, 68, 204);
+    width: 80%;
+    height: 50%;
+    border-radius: 14px;
+    flex-direction: column;
+    align-items: center;
+    margin: 2vh 3vw;
+}
+.caja h1{
+    color: #F7F7F7;
+}
+.titulo{
+    color: #F7F7F7;
+} 
+.form1{
+    display: flex;
+    align-items: center;
+    justify-content:center;
+    margin: 2vw 3vw;
+    gap: 3vw;
+} .form2{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 3vw;
+    margin: 5vw 3vw; 
+}
+input{
+    display: flex;
+    height: 2vw;
+    border: #F7F7F7;
+    border-radius: 14px;
+    text-align: center;
+}
+.btn-cotizar{
+    background-color: #F7F7F7;
+    border: gray 1px solid;
+    border-radius: 50%;
+    width: 150px;    
+    height: 45px;
+    font-size: 25px;
+    color: rgb(68, 68, 204);
+}
+/* ----------------------------FIN FORMULARIO--------------------- */
+
+/* ----------------------------NUESTROS DESTINOSS--------------------- */
+.contenedor{
+    /*border:yellowgreen 2px solid; SOLO PARA VER LA CAJA */
+    display: flex;
+    justify-content: space-around;/* para que deje espacio con los bordes */
+    /*gap: 10px;  Separa de los bordes */
+    flex-wrap: wrap;/* para que se acomode al tamaño de la caja */
+}
+.card{
+    /*border: rgb(255, 115, 0) 1px solid; SOLO PARA VER LA CAJA */
+    background-color: rgb(105, 105, 190);
+/*     padding: 10px; */
+    border-radius: 20px;
+    width: 250px;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.408);
+    color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 10px;
+}
+.card img{    
+    width: 85%;
+    border-radius: 20px;
+}
+.titulo-destinos h2{
+/*     border:rgb(23, 130, 223) 3px solid;  */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
+/* ----------------------------FIN NUESTROS DESTINOS--------------------- */
+
+
+/* ----------------------------FOOTER--------------------- */
+.pie-pagina {
+    width: 100%;
+    background-color: rgb(63, 63, 211);
+}
+.pie-pagina .grupo-1 {
+    width: 100%;
+    max-width: 1200px;
+    margin: auto;
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    grid-gap: 50px;
+    padding: 45px 0px;
+}
+.pie-pagina .grupo-1 .box h2{
+    color: #F7F7F7;
+    margin-bottom: 25px;
+    font-size: 20px;
+}
+.pie-pagina .grupo-1 .box p{
+    color: #F7F7F7;
+    margin-bottom: 10px;
+}
+.pie-pagina .grupo-1 .box p:hover{
+    color:lightskyblue
+}
+.pie-pagina .grupo-1 .box .red-social i{
+    display: inline-block;
+    text-decoration: none;
+    width: 75px;
+    height: 75px;
+    line-height: 45px;
+    color: #F7F7F7;
+    margin-right: 10px;
+    background-color:rgb(63, 63, 211);
+    text-align: center;
+    transition: all 300ms ease;
+}
+.pie-pagina .grupo-1 .box .red-social i:hover {
+    color:lightskyblue;
+}
+.pie-pagina .grupo-2 {
+    color:rgb(63, 63, 211);
+    padding: 15px 10px;
+    text-align: center;
+    color: #F7F7F7;
+}
+.pie-pagina .grupo-2 small {
+    font-size: 15px;
+}
+@media screen and (max-width:800px){
+    .pie-pagina .grupo-1{
+        width: 90%;
+        grid-template-columns: repeat(1,1fr);
+        grid-gap: 30px;
+        padding: 35px 0px;
+    }
+}
+/* ----------------------------FIN FOOTER--------------------- */
+
