@@ -1,6 +1,6 @@
 const contenedorHTML = document.getElementById("contenedor")
 
-fetch("../Database/database.json")
+fetch("./Database/database.json")
 .then(response => response.json())
 .then(data => {
         for(locacion of data){
