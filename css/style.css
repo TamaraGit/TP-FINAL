@@ -26,12 +26,14 @@ header{
     justify-content: space-between;
     background-color: var(--color-primario);
     padding: 3vh 5vw;
+    margin-bottom: 2vw;
     align-items: center;
     border-radius: 10px;
 }
 .btn-menu{
     background-color: var(--color-quinto);
     border:none;
+    border-radius: 7px;
     width: 40px;
     height: 40px;
     font-size: 30px;
@@ -79,11 +81,18 @@ a:hover{
 /* ----------------------------FIN HEADER--------------------- */
 
 /* ----------------------------IMAGEN PRINCIPAL HERO--------------------- */
-
+.seccion1{
+    display: flex;
+ /*    justify-content: space-around; */
+    flex-wrap: wrap;
+}
  .imagen-principal{
+    border: rgb(151, 236, 187) 1px solid; 
+     width:45%; 
     background-image: url(/Imagenes/IMAGENFONDO.jpg);
     background-repeat: no-repeat;
-    background-size:cover;
+     background-size:contain; 
+  /*   background-position: center; */
 } 
 .imagen-principal h1{
     display: flex;
@@ -93,13 +102,77 @@ a:hover{
 
 /* ----------------------------FIN IMAGEN PRINCIPAL--------------------- */
 
-.formularioContacto{
+/* ----------------------------FORMULARIO--------------------- */ 
+
+main .contenedorFormulario{
+    width:50%;
+    border: rgb(255, 115, 0) 1px solid; 
     display: flex;
     flex-direction: column;
+    padding-left: 2vh;
+}
+main .titulo h2{
+    display: flex;
+    justify-content: center;
+    color:var(--color-primario);
+}
+.formularioLugares{
+    display:flex;
+    flex-direction: column;
+    width: 350px;
+}
+.formularioLugares label{
+    color:var(--color-primario);   
+
+}
+.btn-cotizar{
+    margin-top: 1vh; 
+    padding: 1vh; 
+    background-color: var(--color-terciario);
+    border-radius: 14px;
+    color:var(--color-quinto);  
+    width:200px;  
+    border:solid var(--color-primario) 1px;
+}
+.btn-cotizar:hover{
+    transition:1s ease-in-out;
+    background-color: var(--color-quinto);
+    color: var(--color-terciario);
+}
+
+.contenedorCotizador{
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    gap: 30px;
+    justify-content: center;
+}
+.card-sitios{
+    padding: 10px;
+    background-color: rgb(33, 33, 33);
+    color: white;
+    border-radius: 5px;
+    width: 300px;
 }
 
 
-/* ----------------------------FORMULARIO--------------------- */ 
+/* main form {
+    width: 190%;
+    display: flex;
+    flex-direction: column;
+   
+}
+
+.btn-cotizar{
+    padding: 1vh;
+    background-color: var(--color-terciario);
+    border-radius: 14px;
+    color:var(--color-quinto);
+    margin-top: 1vh;
+    width:120px;
+ 
+} */
+
 /* .seccion1{
     display: flex;
     flex-direction: row;
@@ -299,6 +372,7 @@ input{
 
 /* ----------------------------FIN NUESTROS DESTINOS--------------------- */
 /* -----------------sSUSCRIPCION AL NEWSLETTER------------------ */
+
 .seccion3{
     background-color: var(--color-cuarto);
 }
@@ -310,6 +384,12 @@ input{
 .formularioSuscripcion h2{
     color: var(--color-primario);
 }
+
+.formularioContacto{
+    display: flex;
+    flex-direction: column;
+}
+
 main form{
     width: 50%;
     display:flex;

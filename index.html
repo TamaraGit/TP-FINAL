@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Mi ver del TP</title>
     <link rel="stylesheet" href="./css/style.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.4/font/bootstrap-icons.css">
 </head>
@@ -23,37 +23,50 @@
         
     </header>
    <main>
+  
     <section class="seccion1">
         <div class="imagen-principal">
             <h1>El mejor viaje, <br> es el próximo</h1>
         </div>
-        <div class="caja">
+<!--         <div class="caja">
             <div>
-                <h2 class="titulo">Cotizar mi viaje</h2>
-            </div>
-            <div class="contenedorForm">
-                <form class="formularioUsuario" id="formularioUsuario">
-                    <div class="form1" id="formularioUsuario">
-                        <input type="text" name="provincia" placeholder="Provincia">
-                        <input type="text" name="ciudad" placeholder="Ciudad">
-                        <input type="number" name="noches" placeholder="Noches">
+                <h2 class="titulo">Cotizar mi estadia</h2>
+            </div> -->
+            <div class="contenedorFormulario">
+
+                <div class="titulo">
+                    <h2>Cotizar mi estadia</h2>
+                </div>
+
+                <form class="formularioCotizador" id="formularioCotizador">
+                    <div class="formularioLugares">
+                        <label for="lugares">Ciudad en la que desea hospedarse</label>
+                        <select name="lugares" id="lugares">
+                            <option value="Isla de los estados">Isla de los estados</option>
+                            <option value="Cerro castor">Cerro castor</option>
+                            <option value="Fitz Roy">Fitz Roy</option>
+                            <option value="El Chalten">El Chalten</option>
+                            <option value="El Calafate">El Calafate</option>
+                        </select>
                     </div>    
-                    <div class="form2" id="formularioUsuario">
-                        <input type="number" name="adultos" placeholder="Adultos">
-                        <input type="number" name="menores" placeholder="Menores">
+                    <div class="formularioLugares">
+                        <label for="noches">Cantidad de noches</label>
+                        <input type="number" id="noches" name="noches">
                     </div>
-                    <div class="cotizar" id="formularioUsuario">
-                        <input type="submit" name="cotizar" value="Cotizar" class="btn-cotizar">
-                    </div>
+
+                    <input type="submit" value="Cotizar mi estadia" class="btn-cotizar">
+                    
                 </form>
+                            <div class="contenedorCotizador" id="contenedorCotizador"></div> 
+
             </div>
-        </div></div>
+        <!-- </div> -->
     </section>  
              
         <section class="seccion2">
             <div class="titulo-destinos"><h2>Nuestros destinos</h2></div>
 
-            <div id="contenedor" class="contenedor"></div>    
+            <div class="contenedor" id="contenedor"></div>    
         </section> 
 
         <section class="seccion3">
