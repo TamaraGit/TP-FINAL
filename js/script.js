@@ -15,28 +15,13 @@ fetch("./Database/database.json")
         }
 })
 
-/* 
-const formularioUsuario = document.querySelector("#formularioUsuario")
-
-const lugares = []
-/* const renderizarLugares = () => */
-/*
-formularioUsuario.addEventListener("submit", (event) =>{
-    event.preventDefault()
-    console.log(formularioUsuario.lugares.value)
-    lugares.push({formularioUsuario.nochecitas.value})
-})
- */
-
-
-
 const formularioCotizador = document.querySelector("#formularioCotizador")
 const contenedorHTML2 = document.querySelector(".contenedorCotizador") 
 const sitios = []
 
  const renderizarSitios = () =>{
     contenedorHTML2.innerHTML = ""
-    for(const x of sitios){
+    for(const sitio of sitios){
         contenedorHTML2.innerHTML += `
         <div class="card-sitios">
             <p>Nombre del lugar: ${sitios.lugares}</p>
