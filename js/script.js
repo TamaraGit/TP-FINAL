@@ -36,11 +36,12 @@ const sitios = []
 
  const renderizarSitios = () =>{
     contenedorHTML2.innerHTML = ""
-    for(const sitio of sitios){
+    for(const x of sitios){
         contenedorHTML2.innerHTML += `
         <div class="card-sitios">
-            <h2>Nombre del lugar: ${sitios.lugares}</h2>
+            <p>Nombre del lugar: ${sitios.lugares}</p>
             <p>Cant de noches: ${sitios.noches}</p>
+            <h2>Precio de la estadia: ${sitios.lugares}</h2>
 
         </div>
         `
@@ -52,8 +53,8 @@ formularioCotizador.addEventListener("submit", (event) =>{
     console.log(formularioCotizador.lugares.value)
     console.log(formularioCotizador.noches.value)
     sitios.push({
-    /* formularioCotizador.lugares.value */
-    formularioCotizador.noches.value
+    Nombre:formularioCotizador.lugares.value, 
+    Noches: formularioCotizador.noches.value
    
     })
     renderizarSitios() 
