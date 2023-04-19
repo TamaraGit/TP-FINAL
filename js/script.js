@@ -19,14 +19,24 @@ const formularioCotizador = document.querySelector("#formularioCotizador")
 const contenedorHTML2 = document.querySelector(".contenedorCotizador") 
 const sitios = []
 
- const renderizarSitios = () =>{
+/* const Islas de los estados = 7200
+const Cerro Castor = 4500
+const Fitz Roy = 6500
+const El Chalten = 7500
+const El Calafate = 8000 */
+
+
+const renderizarSitios = () =>{
     contenedorHTML2.innerHTML = ""
-    for(const sitio of sitios){
+    for(const x of sitios){
         contenedorHTML2.innerHTML += `
         <div class="card-sitios">
-            <p>Nombre del lugar: ${sitios.lugares}</p>
-            <p>Cant de noches: ${sitios.noches}</p>
-            <h2>Precio de la estadia: ${sitios.lugares}</h2>
+            <p>Nombre del lugar: ${x.Nombre}</p>
+            <p>Cant de noches: ${x.Noches}</p>
+            <p><strong>Costo de la estadia: ${x.Noches}$</strong></p>
+            if(Isla de los estados ==${x.Nombre}){
+                ${x.Noches}*7200
+            }
 
         </div>
         `
@@ -39,7 +49,7 @@ formularioCotizador.addEventListener("submit", (event) =>{
     console.log(formularioCotizador.noches.value)
     sitios.push({
     Nombre:formularioCotizador.lugares.value, 
-    Noches: formularioCotizador.noches.value
+    Noches:formularioCotizador.noches.value
    
     })
     renderizarSitios() 
