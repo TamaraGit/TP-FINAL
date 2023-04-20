@@ -449,11 +449,11 @@ main form .inputContainer{
     grid-gap: 50px;
     padding: 45px 0px;
 }
-.pie-pagina .form3 h2, {
+.pie-pagina .form3 h2{
     color:whitesmoke;
     font-size: 20px;
 }
-.pie-pagina .form3 ,p {
+.pie-pagina .form3 p {
     color:whitesmoke;
     font-size: 16px;
 }
