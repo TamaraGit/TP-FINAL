@@ -105,16 +105,18 @@ a:hover{
 /* ----------------------------FORMULARIO--------------------- */ 
 
 main .contenedorFormulario{
+    background-color: var(--color-terciario);
     width:50%;
-    border: rgb(255, 115, 0) 1px solid; 
+/*     border: rgb(255, 115, 0) 1px solid;  */
     display: flex;
     flex-direction: column;
     padding-left: 2vh;
+    border-radius: 14px;
 }
 main .titulo h2{
     display: flex;
     justify-content: center;
-    color:var(--color-primario);
+    color:var(--color-quinto);
 }
 .formularioLugares{
     display:flex;
@@ -122,13 +124,13 @@ main .titulo h2{
     width: 350px;
 }
 .formularioLugares label{
-    color:var(--color-primario);   
+    color:var(--color-quinto);   
 
 }
 .btn-cotizar{
     margin-top: 1vh; 
     padding: 1vh; 
-    background-color: var(--color-terciario);
+    background-color: var(--color-primario);
     border-radius: 14px;
     color:var(--color-quinto);  
     width:200px;  
@@ -149,8 +151,8 @@ main .titulo h2{
 }
 .card-sitios{
     padding: 10px;
-    background-color: rgb(33, 33, 33);
-    color: white;
+    background-color: var(--color-secundario);
+    color: var(--color-quinto);
     border-radius: 5px;
     width: 300px;
 }
